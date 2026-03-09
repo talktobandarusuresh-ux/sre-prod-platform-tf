@@ -1,8 +1,8 @@
 module "vpc" {
 
-  source = "terraform-aws-modules/vpc/aws"
-
-  name = "sre-vpc"
+  source  = "terraform-aws-modules/vpc/aws"
+  version = "~> 5.0"
+  name    = "sre-vpc"
 
   cidr = "10.0.0.0/16"
 
